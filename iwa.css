@@ -1,0 +1,166 @@
+html {
+    font-size: 13px;
+}
+
+body {
+    background-color: black;
+    font-family: 'Hind', sans-serif;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.full-container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside {
+    position: relative;
+}
+
+.over {
+    transform: rotate( 180deg);
+    -moz-transform: rotate( 180deg);
+    -ms-transform: rotate( 180deg);
+    -o-transform: rotate( 180deg);
+    -webkit-transform: rotate( 180deg);
+    transition: transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+}
+
+#rotate {
+    font-size: 25rem;
+}
+
+.overagain {
+    transform: rotate( 0deg);
+    -moz-transform: rotate( 0deg);
+    -ms-transform: rotate( 0deg);
+    -o-transform: rotate( 0deg);
+    -webkit-transform: rotate( -0deg);
+    transition: transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+}
+
+.list {
+    position: absolute;
+    top: 19.4rem;
+    left: 1.2rem;
+    font-size: 2rem;
+    line-height: 32px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-label {
+    font-size: 2rem;
+    position: absolute;
+    left: 4.3rem;
+    top: 24.3rem;
+    line-height: 0px;
+    color: #d8d8d8;
+}
+
+.form-label, form {
+    display: none;
+}
+
+.email-form {
+    position: absolute;
+    background-color: #a6a2a2;
+    border: 1px solid;
+    border-color: #d8d8d8;
+    height: 2.8em;
+    width: 12em;
+    top: 26.8em;
+    left: 4.4em;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+    font-size: 2rem;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+    font-size: 2rem;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    font-size: 2rem;
+}
+
+input[type=text] {}
+
+input[type=text]:focus {
+    border: 2px solid rgb(230, 214, 15);
+}
+
+button[type=submit] {
+    border: none;
+    display: none;
+    background-color: #000;
+    transform: translate(12rem, 0);
+    background-image: url(./sent.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
+    width: 62px;
+    height: 34px;
+    cursor: pointer;
+    position: absolute;
+    top: 27em;
+    left: 5.5em;
+}
+
+.confirmation {
+    display: none;
+    position: absolute;
+    top: 11.65rem;
+    left: 4.3rem;
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+.confirmation .thanks {
+    position: absolute;
+    top: -3.9rem;
+    left: -8.8rem;
+}
+
+.confirmation .see-you {
+    position: absolute;
+    width: 2rem;
+    top: -18px;
+    left: 6px;
+}
